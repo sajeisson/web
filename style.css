@@ -105,28 +105,43 @@ a:hover {
   top: 100%;
   right: 0;
   background-color: white;
-  width: fit-content;
+  width: auto;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Añade sombra para resaltar el menú */
+  border-radius: 5px;
+  /* Agrega bordes redondeados */
 }
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
+  /* Aumenta el padding para mayor área de clic */
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  /* Reduce el tamaño de la fuente */
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
   list-style: none;
+  border-bottom: 1px solid #f1f1f1;
+  /* Agrega separación entre elementos */
+}
+
+.menu-links li:last-child {
+  border-bottom: none;
+  /* Elimina la línea inferior del último elemento */
 }
 
 .menu-links.open {
   max-height: 300px;
+  overflow-y: auto;
+  /* Agrega scroll si el contenido excede la altura máxima */
 }
 
 .hamburger-icon.open span:first-child {
@@ -436,4 +451,34 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+/* Estilos para la lista de publicaciones */
+#blog-posts {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #404040;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.post h3 a {
+  text-decoration: none;
+  /* Elimina la línea subrayada */
+  color: inherit;
+  /* Hereda el color del texto */
+}
+
+.post h3 a:hover {
+  /* text-decoration: underline;*/
+  /* Vuelve a subrayar al pasar el cursor */
 }
