@@ -18,7 +18,7 @@ function displayDevToPosts(posts) {
   const container = document.getElementById("blog-posts");
   container.innerHTML = ""; // Limpiar contenido previo
 
-  const latestPosts = posts.slice(0, 5); // Obtener solo las 5 primeras publicaciones
+  const latestPosts = posts.slice(0, 6); // Obtener solo las 5 primeras publicaciones
 
   latestPosts.forEach((post) => {
     const postElement = document.createElement("div");
