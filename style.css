@@ -455,8 +455,15 @@ footer p {
 
 
 /* Estilos para la lista de publicaciones */
+#post {
+  margin-bottom: 10px;
+}
+
+#contact {
+  margin-top: 10px;
+}
 #blog-posts {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .post {

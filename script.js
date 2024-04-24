@@ -32,6 +32,6 @@ function displayDevToPosts(posts) {
 
 
 // Llamar a la función para obtener y mostrar las publicaciones
-fetchDevToPosts("abhilash8").then((posts) => {
+fetchDevToPosts("jfsan").then((posts) => {
   displayDevToPosts(posts);
 });
